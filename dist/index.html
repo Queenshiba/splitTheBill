@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/style.css">
     <title>Split The Bill</title>
 </head>
+
 <body>
     <h1>Split The Bill</h1>
+    <div class="selectionOfNumber">
+        <p>Select the number of people that you want to split the bill with</p>
+        <input type="number" min="2" id="numberOfPpl" required><button onclick="selectNumber()">select</button>
+    </div>
+
+
+    <div id="whole-calc-conatiner" style.display="hide">
+
+        <div class="first">
+            <p class="name">test</p>
+        </div>
+        <div class="paid">
+            <input type="number"><button>select</button>
+        </div>
+        <div class="paid-details">
+            <div class="detail-item-input">
+                <input type="text">
+                <input type="text"><button>add</button>
+            </div>
+        </div>
+        <div>
+            <button>calculate</button>
+        </div>
+        <div class="result">
+
+        </div>
+
+    </div>
+
 </body>
+<script src="/dist/main.js"></script>
+
 </html>
