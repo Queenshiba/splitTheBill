@@ -1,7 +1,17 @@
-.whole-calc-conatiner {
+#whole-calc-conatiner {
     background-color: aqua;
 
 }
 .set {
     background-color: yellowgreen;
+}
+.divForPaidItems {
+    background: tomato;
+}
+
+.divForAddItems{
+    background: greenyellow;
+}
+.divForResult {
+    background: honeydew;
 }
