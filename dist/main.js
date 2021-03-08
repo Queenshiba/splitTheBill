@@ -22,6 +22,7 @@ let pForAddItems = document.createElement('p')
 pForAddItems.textContent += 'Add items'
 let btnForAddItems = document.createElement('button')
 btnForAddItems.textContent += 'Add'
+btnForAddItems.setAttribute('onclick','test()')
 divForAddItems.appendChild(pForAddItems)
 divForAddItems.appendChild(btnForAddItems)
 
@@ -39,6 +40,9 @@ divForSet.appendChild(divForAddItems)
 divForSet.appendChild(divForResult)
 
 
+function test() {
+    alert('test')
+}
 
 function selectNumber() {
     console.log(numberOfPplValue.value)

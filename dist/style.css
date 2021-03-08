@@ -1,6 +1,7 @@
 #whole-calc-conatiner {
     background-color: aqua;
-
+    display: flex;
+    flex-direction: row;
 }
 .set {
     background-color: yellowgreen;
