@@ -12,6 +12,12 @@
 
 .divForAddItems{
     background: greenyellow;
+    display: flex;
+    flex-direction: column;
+}
+.divForAddItemsBtn {
+    display: flex;
+    flex-direction: row;
 }
 .divForResult {
     background: honeydew;

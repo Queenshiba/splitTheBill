@@ -16,17 +16,37 @@ divForPaidItems.classList.add('divForPaidItems')
 let inputForPaidAmnt = document.createElement('input')
 divForPaidItems.appendChild(inputForPaidAmnt)
 
+// Section for addting items
 let divForAddItems = document.createElement('div')
 divForAddItems.classList.add('divForAddItems')
+
+// div for input and btn to show input to add item
+let divForAddItemsBtn = document.createElement('div')
+divForAddItemsBtn.classList.add('divForAddItemsBtn')
 let pForAddItems = document.createElement('p')
 pForAddItems.textContent += 'Add items'
 let btnForAddItems = document.createElement('button')
 btnForAddItems.textContent += 'Add'
 btnForAddItems.setAttribute('onclick','test()')
-divForAddItems.appendChild(pForAddItems)
-divForAddItems.appendChild(btnForAddItems)
+divForAddItemsBtn.appendChild(pForAddItems)
+divForAddItemsBtn.appendChild(btnForAddItems)
+divForAddItems.appendChild(divForAddItemsBtn)
 
-divForPaidItems.appendChild(divForAddItems)
+
+// div for input and btn to add items
+let divForAddItemName = document.createElement('div')
+divForAddItemName.classList.add('ddivForAddItemName')
+let inputForItemName = document.createElement('input')
+inputForItemName.classList.add('inputForItemName')
+let btnForAddItemName = document.createElement('button')
+btnForAddItemName.classList.add('btnForAddItemName')
+btnForAddItemName.textContent += 'Add Item'
+divForAddItemName.appendChild(inputForItemName)
+divForAddItemName.appendChild(btnForAddItemName)
+
+
+
+
 
 let divForResult = document.createElement('div')
 let pForResult = document.createElement('p')
@@ -40,8 +60,10 @@ divForSet.appendChild(divForAddItems)
 divForSet.appendChild(divForResult)
 
 
+divForAddItems.appendChild(divForAddItemName)
 function test() {
     alert('test')
+    
 }
 
 function selectNumber() {
