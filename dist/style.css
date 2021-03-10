@@ -2,9 +2,15 @@
     background-color: aqua;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    height: 40vh;
 }
 .set {
     background-color: yellowgreen;
+}
+.divForSet {
+    background-color: hotpink;
+
 }
 .divForPaidItems {
     background: tomato;
