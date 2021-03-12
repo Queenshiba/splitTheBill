@@ -35,7 +35,7 @@ divForAddItems.classList.add('divForAddItems')
 
 // div for input and btn to add items
 let divForAddItemName = document.createElement('div')
-divForAddItemName.classList.add('ddivForAddItemName')
+divForAddItemName.classList.add('divForAddItemName')
 let inputForItemName = document.createElement('input')
 inputForItemName.classList.add('inputForItemName')
 inputForItemName.setAttribute('type','text')
@@ -65,10 +65,14 @@ divForSet.appendChild(divForResult)
     divForAddItems.appendChild(divForAddItemName)
 function test() {
     let inputext = document.getElementsByClassName('inputForItemName')
+    // alert(inputext[0].value)
 
-    alert(inputext[0].value)
-
-    console.log(inputForItemName)
+    // li for items
+let liForAddItemName = document.createElement('li')
+liForAddItemName.classList.add('liForAddItemName')
+liForAddItemName.textContent += inputext[0].value
+divForAddItems.appendChild(liForAddItemName)
+console.log(divForAddItems)
 }
 
 function selectNumber() {
