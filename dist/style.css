@@ -25,6 +25,10 @@
     display: flex;
     flex-direction: row;
 }
+.divForAddItemList {
+    background-color: indianred;
+    height: 300px;
+}
 .divForResult {
     background: honeydew;
 }

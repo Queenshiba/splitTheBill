@@ -67,13 +67,24 @@ function test() {
     let inputext = document.getElementsByClassName('inputForItemName')
     // alert(inputext[0].value)
 
+
+// div for list
+let divForAddItemList = document.createElement('div')
+divForAddItemList.classList.add('divForAddItemList')
+
     // li for items
 let liForAddItemName = document.createElement('li')
 liForAddItemName.classList.add('liForAddItemName')
-liForAddItemName.textContent += inputext[0].value
-divForAddItems.appendChild(liForAddItemName)
+let create = document.createTextNode(inputext[0].value)
+liForAddItemName.append(create)
+
+divForAddItems.appendChild(divForAddItemList)
+divForAddItemList.appendChild(liForAddItemName)
 console.log(divForAddItems)
+
+console.log(divForSet)
 }
+
 
 function selectNumber() {
     console.log(numberOfPplValue.value)
