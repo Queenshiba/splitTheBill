@@ -38,16 +38,18 @@ let divForAddItemName = document.createElement('div')
 divForAddItemName.classList.add('divForAddItemName')
 let inputForItemName = document.createElement('input')
 inputForItemName.classList.add('inputForItemName')
-inputForItemName.setAttribute('type','text')
+inputForItemName.setAttribute('type', 'text')
 let btnForAddItemName = document.createElement('button')
 btnForAddItemName.classList.add('btnForAddItemName')
-btnForAddItemName.setAttribute('onclick','test()')
+btnForAddItemName.setAttribute('onclick', 'test()')
 btnForAddItemName.textContent += 'Add Item'
 divForAddItemName.appendChild(inputForItemName)
 divForAddItemName.appendChild(btnForAddItemName)
 
 
-
+// div for list
+let divForAddItemList = document.createElement('div')
+divForAddItemList.classList.add('divForAddItemList')
 
 
 let divForResult = document.createElement('div')
@@ -62,27 +64,23 @@ divForSet.appendChild(divForAddItems)
 divForSet.appendChild(divForResult)
 
 
-    divForAddItems.appendChild(divForAddItemName)
+divForAddItems.appendChild(divForAddItemName)
 function test() {
     let inputext = document.getElementsByClassName('inputForItemName')
-    // alert(inputext[0].value)
+    console.log(inputext[0].value)
 
-
-// div for list
-let divForAddItemList = document.createElement('div')
-divForAddItemList.classList.add('divForAddItemList')
 
     // li for items
-let liForAddItemName = document.createElement('li')
-liForAddItemName.classList.add('liForAddItemName')
-let create = document.createTextNode(inputext[0].value)
-liForAddItemName.append(create)
+    let liForAddItemName = document.createElement('li')
+    liForAddItemName.classList.add('liForAddItemName')
+    let create = document.createTextNode(inputext[0].value)
+    liForAddItemName.append(create)
 
-divForAddItems.appendChild(divForAddItemList)
-divForAddItemList.appendChild(liForAddItemName)
-console.log(divForAddItems)
+    divForAddItems.appendChild(divForAddItemList)
+    divForAddItemList.appendChild(liForAddItemName)
+    console.log(divForAddItems)
 
-console.log(divForSet)
+    console.log(divForSet)
 }
 
 
